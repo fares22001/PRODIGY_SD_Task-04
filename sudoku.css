@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#sudoku-container {
+    display: grid;
+    grid-template-columns: repeat(9, 40px);
+    grid-template-rows: repeat(9, 40px);
+    gap: 2px;
+}
+
+.input-cell {
+    text-align: center;
+    border: 1px solid #ccc;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.button-cell {
+    grid-column: span 9;
+    margin-top: 10px;
+}
+
+.button-cell button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
